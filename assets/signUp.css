@@ -1,0 +1,35 @@
+/* .signup__title */
+.signup__title {
+    font-size: 1.6rem;
+    /* font-family: $secondary-font;
+    color: $primary; */
+    font-weight: 600;
+}
+.signup{
+    margin-top: 210px !important;
+}
+/* .grid */
+.grid {
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+/* .form__label::after */
+.grid .form__label::after {
+    content: '*';
+    /* color: $secondary; */
+    padding-left: 0.5rem;
+}
+
+/* .signup__block */
+.signup__block {
+    margin: 2rem 0;
+}
+
+/* .signup__buttons */
+.signup__buttons {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+}

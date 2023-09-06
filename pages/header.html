@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green shop</title>
-    <link rel="stylesheet" href="./assets/main.css">
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./base.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="./index.html">
-    <link rel="stylesheet" href="./main.js">
-    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
 </head>
-<body>  
-    <!-- header  -->
+<body>
     <header class="header container-fluid main-container fixed-top border-bottom" style="padding : 0px 0px ;">
         <div class="top_bar">
-			<div class="container-sm">
-				<div class="row">
-					<div class="col d-flex flex-row">
-                        <div class="col d-flex flex-row">
+			<div class="container-sm w-75 h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col d-flex flex-row h-100">
+                        <div class="col d-flex flex-row align-items-center">
 						<div class="top_bar_contact_item">
                             <div class="top_bar_icon"><i class="fa-regular fa-clock"></i>
                             </div>
@@ -46,13 +44,13 @@
                             </div>
                         </div>
                     </div>
-						<div class="top_bar_content ml-auto">
+						<div class="top_bar_content ml-auto d-flex align-items-center">
 						
 							<div class="top_bar_user">
 								<div class="user_icon"><i class="fa-solid fa-user"></i></div>
-								<div><a href="#">Register</a></div>
+								<div><a href="./signIn.html">Đăng nhập</a></div>
                                 <div class="user_icon"><i class="fa-solid fa-user-plus"></i></div>
-								<div><a href="#">Sign in</a></div>
+								<div><a href="./signUp.html">Đăng ký</a></div>
 							</div>
 						</div>
 					</div>
@@ -64,16 +62,16 @@
         <div class="header__bottom">
 
         
-        <div class="container-sm  h-100 d-flex flex-collumn">
+        <div class="container-sm w-75  h-75 d-flex flex-collumn">
 
         
         <div class=" header__bottom--container flex-grow-1 d-flex p-2  ">
           <div class="col-xl-6 col-6 col-md-2 header__logo d-flex flex-ro1w align-items-center">
             <div class="header__logo--brand">
-                <img src="./resources/image/logo-mobile.png" alt="logo green shop">
+                <img src="../resources/image/logo-mobile.png" alt="logo green shop">
             </div>
             <div class="header__logo--image">
-                <img src="./resources/image/header-secondary.png" alt="header secondary green shop">
+                <img src="../resources/image/header-secondary.png" alt="header secondary green shop">
             </div>
             </div>
             <div class="col-xl-4 col-4 col-md-2 header__search d-flex flex-collumn align-items-center">
@@ -81,7 +79,7 @@
                     <div class="header__search__info">
                         <i class="fa-solid fa-phone"></i>   HỖ TRỢ : 0384657577 - 0368720813</div>
                     <div class="header__search__input row d-flex">
-                        <input type="text" placeholder="Tìm kiếm ....">
+                        <input class="search__input" type="text" placeholder="Tìm kiếm ....">
                         <div class="search__input__icon">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
@@ -91,7 +89,7 @@
           
             <div class="col-xl-2 col-2 col-md-2 header__cart d-flex flex-row  align-items-center justify-content-around">
 
-                    <div class="cart__icon"><i class="fa-solid fa-basket-shopping"></i></div>
+                    <div class="cart__icon"><a href="./cartPages.html"><i class="fa-solid fa-basket-shopping"></i></a></div>
                     <div class="cart__info">0 sản phẩm </div>
                 </div>
             
@@ -100,7 +98,7 @@
             </div>
         </div>
         <div class="header__navigation">
-            <div class="container-sm h-100 d-flex flex-collumn align-items-center">
+            <div class="container-sm w-75 h-100 d-flex flex-collumn align-items-center">
                 <div class="header__navigation__icon">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -108,14 +106,14 @@
                         <div class="collapse navbar-collapse" id="nav-bar">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"> TRANG CHỦ </a>
+                                    <a class="nav-link" href="./homePage.html"> TRANG CHỦ </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"> GIỚI THIỆU  </a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle"
-                           href="#" data-toggle="dropdown">
+                           href="./productCategories.html" data-toggle="dropdown">
                                         SẢN PHẨM
                                     </a>
                                     <div class="dropdown-menu">
@@ -126,7 +124,7 @@
                               
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle"
-                           href="#" data-toggle="dropdown">
+                           href="./productCategories.html" data-toggle="dropdown">
                                         SẢN PHẨM MỚI
                                     </a>
                                     <div class="dropdown-menu">
@@ -146,20 +144,6 @@
             </div>
         </div>
             </header>
-            <!-- body  -->
-    <section>
-        <div class="body__slide">
-            <div class="body__slide--image">
-                <img src="./resources/image/slide-1920x590.png" alt="slide homepage" class="img-fluid">
-            </div>
-        </div>
-        <div class="content">
-
-        </div>
-    
-    </section>
-    <footer>
-
-    </footer>
+            <script src="../script/productCategory.js"></script>
 </body>
 </html>

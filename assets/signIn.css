@@ -1,0 +1,46 @@
+/* .signin */
+.signin,
+.signin__element,
+.signin__title,
+.signin__remember,
+.signin__form {
+    margin: 2rem 0;
+}
+.signin{
+    margin-top: 210px !important;
+}
+/* .signin__title */
+.signin__title {
+    font-size: 1.6rem;
+    /* font-family: $secondary-font;
+    color: $primary; */
+    font-weight: 600;
+}
+
+/* .signin__forget */
+.signin__forget {
+    font-size: 1.2rem;
+    /* font-family: $secondary-font;
+    color: $dark-lighter; */
+    font-weight: 600;
+    font-style: italic;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.signin__forget:hover {
+    /* color: $primary; */
+}
+
+/* .signin__text */
+.signin__text {
+    font-size: 1.2rem;
+    /* font-family: $secondary-font;
+    color: $dark; */
+    padding-bottom: 2rem;
+}
+
+/* .grid */
+.grid {
+    gap: 2rem;
+}

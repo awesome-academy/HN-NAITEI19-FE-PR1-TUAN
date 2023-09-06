@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/cartPage.css">
+    <link rel="stylesheet" href="../assets/signIn.css">
 </head>
 <body>
-    
+    <div id="header"></div>
+    <div class="container-sm w-75">
+        <div class="row d-flex flex-row">
+    <div class="signin">
+        <div class="wrapper">
+            <!-- Breadcrumbs -->
+            <nav class="breadCums">
+                <a href="#">Đăng nhập</a>
+            </nav>
+            
+            <!-- Main Content -->
+            <div class="grid">
+                <div class="col-6">
+                    <div class="signin__element">
+                        <h5 class="signin__title">THÔNG TIN CÁ NHÂN</h5>
+                        <form class="signin__form" action="">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" id="password" name="password" class="form__input" required>
+                            <div class="signin__remember">
+                                <input type="checkbox" id="form__input--checkbox" class="form__input--checkbox">
+                                <label for="form__input--checkbox" class="signin__label form__label form__label--checkbox">Ghi nhớ tài khoản</label>
+                                <a class="signin__forget" href="#">Bạn quên mật khẩu?</a>
+                            </div>
+                            <div class="signin__button">
+                                <button class="btn btn--primary" type="submit">Đăng nhập</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="signin__element">
+                        <h5 class="signin__title">BẠN CHƯA CÓ TÀI KHOẢN?</h5>
+                        <p class="signin__text">Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn! Ngoài ra còn có rất nhiều chính sách và ưu đãi cho các thành viên citybike</p>
+                        <div class="signin__button">
+                            <button class="btn btn--primary"><a href="./signUp.html">Đăng ký</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div id="footer"></div>
 </body>
+<script src="../main.js"></script>
 </html>
-

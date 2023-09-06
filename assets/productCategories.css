@@ -1,0 +1,403 @@
+   /* Add your CSS styles here */
+        /* For example, you can style the sidebar, headers, and list items */
+     
+
+        .sidebar-category {
+            margin-bottom: 20px;
+        }
+
+        .sidebar-list, .sidebar-priceList, .sidebar-color, .sidebar__newslist, .tags {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-list--item, .sidebar-priceList--item, .sidebar-color--item, .tags__tag {
+            margin-bottom: 10px;
+        }
+
+        /* Define colors for each category */
+        .sidebar-color--item {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            
+            border-radius: 50%;
+        }
+        .categories-header{
+            margin-top: 210px;
+        }
+        .break-point__header{
+            margin-bottom: 60px !important;
+        }
+        /* CSS for .sidebar-list */
+.sidebar-list {
+    padding: 2rem 0;
+    padding-left: 1.5rem;
+  }
+  
+  .sidebar-list--item {
+    list-style-type: '\27A3';
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* CSS for .sidebar-priceList */
+  .sidebar-priceList--item {
+    padding-bottom: 2rem;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* CSS for .sidebar-color */
+  .sidebar-color {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .sidebar-color-display {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .sidebar-color-display .dot {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* CSS for .sidebar .tags */
+  .sidebar .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+  
+  .sidebar .tags__tag {
+    list-style-type: none;
+    border: 1px solid #666;
+    padding: 1rem 1.25rem;
+  }
+  
+  .sidebar .tags__tag a {
+    font-size: 1.3rem;
+    font-family: 'YourSecondaryFont', sans-serif;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 767px) {
+    .sidebar .tags {
+      gap: 0.5rem;
+    }
+  
+    .sidebar .tags__tag {
+      padding: 0.5rem 0.75rem;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .sidebar {
+      display: block;
+    }
+  
+    .sidebar-list {
+      padding-left: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    .sidebar-list--item {
+      list-style-type: none;
+    }
+  }
+  /* Import statements */
+/* Include your base/variables and base/mixins imports here */
+
+/* .productPage */
+.productPage {
+    /* Include your gridTemplate mixin with appropriate values here */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+  
+  /* .productPage-list */
+  .productPage-list {
+    padding: 2rem 0;
+    padding-left: 1.5rem;
+  }
+  
+  /* .productPage-list--item */
+  .productPage-list--item {
+    list-style-type: '\27A3';
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    font-weight: 500;
+    color: #333; /* Replace with your $dark variable */
+    border-bottom: 1px solid #ccc; /* Replace with your $light-gray variable */
+  }
+  
+  /* .productPage-priceList */
+  .productPage-priceList {
+    /* Extend styles from .productPage-list */
+  }
+  
+  /* .productPage-priceList--item */
+  .productPage-priceList--item {
+    /* Extend styles from .productPage-list--item */
+    padding-bottom: 2rem;
+  }
+  
+  /* .productPage-color */
+  .productPage-color {
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  /* .productPage-color-display */
+  .productPage-color-display {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* .productPage-color-display .dot */
+  .productPage-color-display .dot {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* .productPage-color-display:hover */
+ 
+  
+  /* .productPage-detail */
+  .productPage-detail {
+    grid-column: 2 / -1;
+  }
+  
+  /* .productPage-option */
+  .productPage-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+  /* .productPage-view */
+  .productPage-view {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  /* .productPage-view span a */
+  
+  /* .productPage-filter */
+  .productPage-filter {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* .productPage-filter select */
+  .productPage-filter select {
+    padding: 1rem;
+    outline: none;
+  }
+  
+  /* .productPage-item */
+  .productPage-item {
+    /* Include your gridTemplate mixin with appropriate values here */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Media Query for mobile */
+  @media (max-width: 767px) {
+    /* .productPage */
+    .productPage {
+      display: block;
+    }
+  
+    /* .productPage-list */
+    .productPage-list {
+      padding-left: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    /* .productPage-list--item */
+    .productPage-list--item {
+      list-style-type: none;
+    }
+  
+    /* .productPage-banner */
+    .productPage-banner {
+      padding: 2rem 0;
+    }
+  
+    /* .productPage-tab */
+    .productPage-tab .tabs__content:last-of-type,
+    .productPage-tab .tabs__label:last-of-type {
+      display: none;
+    }
+  
+    /* .productPage-item */
+    .productPage-item {
+      /* Include your gridSnap mixin with appropriate values here */
+    }
+  }
+  
+  .product-list__grid{
+    margin-top: 80px !important;
+    padding-left: 40px !important;
+  }
+  body {
+    font-family: 'Helvetica';
+    background-color: #0e2439;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .list-view-button,
+  .grid-view-button {
+    color: #000;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .list-view-button:hover,
+  .grid-view-button:hover {
+    background: rgb(86, 189, 72);
+    color: #0e2439;
+  }
+  
+  .list-view-button {
+    margin-right: 10px;
+  }
+  
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  
+  .list.list-view-filter {
+    flex-direction: column;
+  }
+  
+  .list.list-view-filter li {
+    padding: 10px;
+  }
+  
+  .list.grid-view-filter {
+    flex-flow: row wrap;
+  }
+  
+  .list.grid-view-filter li {
+    width: calc(50% - 210px);
+    padding: 100px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  /* Style the Buy and Review buttons */
+.product-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.buy-button,
+.review-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4fc94f;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+.buy-button:hover,
+.review-button:hover {
+    background-color: #a1b6a1;
+}
+
+/* Add hover animation */
+.product-container:hover  {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+.product-container:hover .buy-button{
+display: block;
+}
+.product-container:hover .review-button{
+    display: block;
+}
+.fa-star{
+  color: #FEBF01;
+}
+h4{
+  margin-bottom: 50px !important;
+}

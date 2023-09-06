@@ -1,0 +1,4 @@
+#product__list--sale{
+    display: flex;
+    flex-wrap: inherit;
+}

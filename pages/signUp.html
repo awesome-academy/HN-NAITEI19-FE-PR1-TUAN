@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/cartPage.css">
+    <link rel="stylesheet" href="../assets/signUp.css">
 </head>
 <body>
-    
+    <div id="header"></div>
+    <div class="container-sm w-75">
+        <div class="row d-flex flex-row">
+    <div class="signup">
+        <div class="wrapper">
+            <!-- Breadcrumbs -->
+            <nav class="breadCums">
+                <a href="#">Đăng ký</a>
+            </nav>
+            
+            <!-- Main Content -->
+            <form class="signup__form" action="">
+                <!-- Thông tin cá nhân -->
+                <div class="signup__block">
+                    <h5 class="signup__title">THÔNG TIN CÁ NHÂN</h5>
+                    <div class="grid">
+                        <div class="col-6">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="text" id="phone" name="phone" class="form__input" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="mail">Địa chỉ mail</label>
+                            <input type="email" id="mail" name="mail" class="form__input" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="website">Website của bạn</label>
+                            <input type="text" id="website" name="website" class="form__input" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="checkbox" id="form__input--checkbox" class="form__input--checkbox">
+                            <label for="form__input--checkbox" class="form__label form__label--checkbox">Đăng ký nhận thông tin qua email</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Thông tin tài khoản -->
+                <div class="signup__block">
+                    <h5 class="signup__title">THÔNG TIN TÀI KHOẢN</h5>
+                    <div class="grid">
+                        <div class="col-6">
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" id="password" name="password" class="form__input" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="repassword">Nhập lại mật khẩu</label>
+                            <input type="password" id="repassword" name="repassword" class="form__input" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Buttons -->
+                <div class="signup__block signup__buttons">
+                    <div class="signup__button">
+                        <button class="btn btn--outline">quay lại</button>
+                    </div>
+                    <div class="signup__button">
+                        <button class="btn btn--primary">Đăng ký</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+    <div id="footer"></div>
 </body>
+<script src="../main.js"></script>
 </html>
-

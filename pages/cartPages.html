@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/cartPage.css">
 </head>
 <body>
-    
+    <div id="header"></div>
+    <div class="container-sm w-75 ">
+        <div class="row d-flex flex-row justify-content-center">
+
+    <div class="cart">
+        <div class="wrapper">
+            <!-- Breadcrumbs -->
+            <nav class="breadCums">Giỏ hàng</nav>
+            
+            <!-- Cart Title -->
+            <h1 class="cart__title">Giỏ hàng</h1>
+            
+            <!-- Cart Table -->
+            <table class="cart__table">
+                <tbody class="cart__body">
+                    <!-- Cart Heading Row -->
+                    <tr class="cart__tr cart__tr--heading">
+                        <th class="cart__th">HÌNH ẢNH</th>
+                        <th class="cart__th">TÊN SẢN PHẨM</th>
+                        <th class="cart__th">ĐƠN GIÁ</th>
+                        <th class="cart__th">SỐ LƯỢNG</th>
+                        <th class="cart__th">THÀNH PHẦN</th>
+                        <th class="cart__th">XOÁ</th>
+                    </tr>
+
+                    <!-- Cart Item Rows -->
+                    <tr class="cart__tr cart__tr--element">
+                        <td class="cart__images cart__td cart__td--images">
+                            <img class="cart__image" src="./assets/spx2-1.png" alt="">
+                        </td>
+                        <td class="cart__name cart__td">
+                            <a class="cart__link" href="">CÂY VĂN PHÒNG</a>
+                        </td>
+                        <td class="cart__price cart__td">
+                            270.000<span class="cart__unit">đ</span>
+                        </td>
+                        <td class="cart__number cart__td">
+                            <input class="cart__input form__input" type="text" value="1">
+                        </td>
+                        <td class="cart__total cart__td">
+                            270.000<span class="cart__unit">đ</span>
+                        </td>
+                        <td class="cart__delete cart__td">
+                            <a class="cart__link">
+                                <i class="cart__icon fa fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Repeat the item rows as needed -->
+
+                </tbody>
+            </table>
+
+            <!-- Mobile Cart Summary -->
+            <div class="cart__mobile">
+                <p>TỔNG TIỀN (CHƯA THUẾ): 270.000đ</p>
+                <p>THUẾ (VAT 10%): 27.000đ</p>
+                <p>TỔNG PHẢI THANH TOÁN: 297.000đ</p>
+            </div>
+
+            <!-- Cart Buttons -->
+            <div class="cart__buttons cart__function d-flex flex-row ">
+                <div class="cart__button">
+                    <button class="btn btn--outline p-2">MUA HÀNG</button>
+                </div>
+                <div class="cart__button">
+                    <button class="btn btn--primary p-2 ml-1">TIẾP TỤC MUA</button>
+                </div>
+            </div>
+
+            <!-- Cart Pay Information -->
+            <div class="cart__pay-wrap">
+                <table class="cart__pay">
+                    <tr class="cart__tr">
+                        <td class="cart__td cart__td--pay cart__heading">TỔNG TIỀN ( CHƯA THUẾ )</td>
+                        <td class="cart__td cart__td--pay cart__paynumber">270.000<span class="cart__unit">đ</span></td>
+                    </tr>
+                    <tr class="cart__tr">
+                        <td class="cart__td cart__td--pay cart__heading">THUẾ ( VAT 10% )</td>
+                        <td class="cart__td cart__td--pay cart__paynumber">27.000<span class="cart__unit">đ</span></td>
+                    </tr>
+                    <tr class="cart__tr">
+                        <td class="cart__td cart__td--pay cart__td--total cart__heading">TỔNG PHẢI THANH TOÁN</td>
+                        <td class="cart__td cart__td--pay cart__td--total cart__paynumber">297.000<span class="cart__unit">đ</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Cart Checkout Button -->
+            <div class="cart__buttons cart__buy">
+                <div class="cart__button">
+                    <button class="btn btn--primary">THANH TOÁN</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div id="footer"></div>
 </body>
+<script src="../main.js"></script>
 </html>
 
