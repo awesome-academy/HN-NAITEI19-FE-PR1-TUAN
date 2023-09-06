@@ -1,0 +1,162 @@
+.cart{
+    margin-top: 210px !important;
+}
+.cart__title {
+    text-transform: uppercase;
+}
+
+.cart__table {
+    margin-top: 2rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cart__td,
+.cart__th {
+    border: 1px solid ;
+    padding: 2rem;
+    text-align: center;
+   color: #6e6c6c;
+}
+
+.cart__th {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color:#3FB871 ;
+    color: #d0d0d0;
+}
+
+.cart__images { }
+ 
+
+.cart__image {
+    display: block;
+  
+}
+
+.cart__mobile {
+    display: none;
+
+}
+
+.cart__link {
+    
+   
+    text-decoration: none;
+}
+
+.cart__price {
+  
+}
+
+.cart__input {
+   
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.cart__total {
+  
+}
+.btn{
+    background-color: #3FB871 !important;
+    border-radius: 5px !important;
+    margin-left: 5px !important;
+}
+
+
+.cart__buttons {
+  
+    margin: 2rem 0;
+}
+
+.cart__pay-wrap {
+   
+}
+
+.cart__pay {
+    margin-top: 2rem;
+    border-collapse: collapse;
+    width: 40%;
+
+    & td {
+        text-align: left;
+    
+    }
+
+    & tr {
+        &:last-of-type {
+            background-color: #3FB871;
+            color: #fff;
+
+            td {
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* @include respond-to('mobile-and-down') {
+    .cart {
+        &__table,
+        &__body,
+        &__tr,
+        &__th,
+        &__td {
+            display: block;
+            text-align: left;
+        }
+
+        &__tr {
+            &--heading {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            &:last-child {
+                .cart__delete {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__td {
+            width: 100%;
+            position: relative;
+            padding-left: 50%;
+            padding: 1rem 0;
+
+            &::before {
+                position: absolute;
+                width: 50%;
+                left: 2rem;
+                @include customFont(
+                    $size: 1.3rem,
+                    $fontFamily: $secondary-font,
+                    $color: $primary,
+                    $weight: 600
+                );
+            }
+            &:nth-of-type(2)::before {
+                content: 'Tên sản phẩm:';
+            }
+            &:nth-of-type(3)::before {
+                content: 'Đơn giá:';
+            }
+            &:nth-of-type(4)::before {
+                content: 'Số lượng:';
+            }
+            &:nth-of-type(5)::before {
+                content: 'Thành tiền:';
+            }
+            &:nth-of-type(6)::before {
+                content: 'Xóa:';
+            }
+        }
+
+        */
+    
+

@@ -1,12 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green shop</title>
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link rel="stylesheet" href="../assets/reset.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="./index.html" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/productCategories.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header class="header container-fluid main-container fixed-top border-bottom" style="padding : 0px 0px ;">
+      <div class="top_bar">
+    <div class="container-sm w-75 h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col d-flex flex-row h-100">
+                      <div class="col d-flex flex-row align-items-center">
+          <div class="top_bar_contact_item">
+                          <div class="top_bar_icon"><i class="fa-regular fa-clock"></i>
+                          </div>
+                          Open time: 8:00 - 18:00 Monday-Sunday 
+                      </div>
+                      <div class="top_bar_contact_item">
+                          <div class="top_bar_icon">                    
+                                  <i class="fa-brands fa-facebook-f"></i>                                
+                          </div>
+                      </div>
+                      <div class="top_bar_contact_item">
+                          <div class="top_bar_icon">                    
+                                  <i class="fa-brands fa-twitter"></i>                                
+                          </div>
+                      </div>
+                      <div class="top_bar_contact_item">
+                          <div class="top_bar_icon">                    
+                                  <i class="fa-brands fa-linkedin"></i>                                
+                          </div>
+                      </div>
+                      <div class="top_bar_contact_item">
+                          <div class="top_bar_icon">                    
+                                  <i class="fa-brands fa-youtube"></i>                                
+                          </div>
+                      </div>
+                  </div>
+          <div class="top_bar_content ml-auto d-flex align-items-center">
+          
+            <div class="top_bar_user">
+              <div class="user_icon"><i class="fa-solid fa-user"></i></div>
+              <div><a href="./signIn.html">Đăng nhập</a></div>
+                              <div class="user_icon"><i class="fa-solid fa-user-plus"></i></div>
+              <div><a href="./signUp.html">Đăng ký</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>		
+  </div>
+
+      </div>
+      <div class="header__bottom">
+
+      
+      <div class="container-sm w-75  h-75 d-flex flex-collumn">
+
+      
+      <div class=" header__bottom--container flex-grow-1 d-flex p-2  ">
+        <div class="col-xl-6 col-6 col-md-2 header__logo d-flex flex-ro1w align-items-center">
+          <div class="header__logo--brand">
+              <img src="../resources/image/logo-mobile.png" alt="logo green shop">
+          </div>
+          <div class="header__logo--image">
+              <img src="../resources/image/header-secondary.png" alt="header secondary green shop">
+          </div>
+          </div>
+          <div class="col-xl-4 col-4 col-md-2 header__search d-flex flex-collumn align-items-center">
+              <div class="row">
+                  <div class="header__search__info">
+                      <i class="fa-solid fa-phone"></i>   HỖ TRỢ : 0384657577 - 0368720813</div>
+                  <div class="header__search__input row d-flex">
+                      <input class="search__input" type="text" placeholder="Tìm kiếm ...." name="txt" onchange="searchProduct(this.value)" value="">
+                      <div class="search__input__icon">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+          <div class="col-xl-2 col-2 col-md-2 header__cart d-flex flex-row  align-items-center justify-content-around">
+
+                  <div class="cart__icon"><a href="./cartPages.html"><i class="fa-solid fa-basket-shopping"></i></a></div>
+                  <div class="cart__info">0 sản phẩm </div>
+              </div>
+          
+          </div>
+
+          </div>
+      </div>
+      <div class="header__navigation">
+          <div class="container-sm w-75 h-100 d-flex flex-collumn align-items-center">
+              <div class="header__navigation__icon">
+                  <i class="fa-solid fa-bars"></i>
+              </div>
+                  <div class="container navbar navbar-expand-lg navbar-light">
+                      <div class="collapse navbar-collapse" id="nav-bar">
+                          <ul class="navbar-nav ml-auto">
+                              <li class="nav-item">
+                                  <a class="nav-link" href="./homePage.html"> TRANG CHỦ </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#"> GIỚI THIỆU  </a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle"
+                         href="./productCategories.html" data-toggle="dropdown">
+                                      SẢN PHẨM
+                                  </a>
+                                  <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"> HOA SEN ĐÁ </a>
+                                      <a class="dropdown-item" href="#"> HOA XƯƠNG RỒNG </a>
+                                  </div>
+                              </li>
+                            
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle"
+                         href="./productCategories.html" data-toggle="dropdown">
+                                      SẢN PHẨM MỚI
+                                  </a>
+                                  <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"> HOA HỒNG </a>
+                                      <a class="dropdown-item" href="#"> HOA CẢI </a>
+                                  </div>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#"> TIN TỨC </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#"> LIÊN HỆ </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>               
+          </div>
+      </div>
+          </header>
+    <div class="container-sm w-75 categories-header">
+      <div class="row d-flex flex-row">
+        <div class="col-3">
+          <!-- Sidebar content -->
+          <div class="h6 break-point__header">Home/Danh sách sản phẩm</div>
+          <aside class="sidebar">
+            <!-- Categories -->
+            <div class="sidebar-category">
+              <h4 class="highlight-body__header">Danh mục sản phẩm</h4>
+              <ul class="sidebar-list">
+                <li class="sidebar-list--item">Cây chậu treo (10)</li>
+                <li class="sidebar-list--item">Cây có hoa</li>
+                <li class="sidebar-list--item">Cây dây leo</li>
+                <li class="sidebar-list--item">Cây để bàn</li>
+                <li class="sidebar-list--item">Cây may mắn</li>
+                <li class="sidebar-list--item">Cây trang trí</li>
+                <li class="sidebar-list--item">Cây nội thất</li>
+              </ul>
+            </div>
+
+            <!-- Price Ranges -->
+            <h4 class="highlight-body__header">Tìm theo giá</h4>
+            <ul class="sidebar-priceList">
+              <li class="sidebar-priceList--item">200.000 Đ - 400.000 Đ</li>
+              <li class="sidebar-priceList--item">400.000 Đ - 600.000 Đ</li>
+              <li class="sidebar-priceList--item">600.000 Đ - 800.000 Đ</li>
+              <li class="sidebar-priceList--item">800.000 Đ - 1000.000 Đ</li>
+              <li class="sidebar-priceList--item">1000.000 Đ - 1200.000 Đ</li>
+            </ul>
+
+            <!-- Colors -->
+            <h4 class="highlight-body__header">Tìm theo màu</h4>
+            <ul class="sidebar-color">
+              <li
+                class="sidebar-color--item"
+                style="background-color: #2ecc71"
+              ></li>
+              <span>Xanh </span>
+              <li
+                class="sidebar-color--item"
+                style="background-color: #e74c3c"
+              ></li>
+              <span>Đỏ </span>
+              <li
+                class="sidebar-color--item"
+                style="background-color: #9b59b6"
+              ></li>
+              <span>Tím </span>
+              <li
+                class="sidebar-color--item"
+                style="background-color: #3498db"
+              ></li>
+              <span>Xanh </span>
+              <li
+                class="sidebar-color--item"
+                style="background-color: #f1c40f"
+              ></li>
+              <span>Vàng </span>
+              <li
+                class="sidebar-color--item"
+                style="background-color: #fd79a8"
+              ></li>
+              <span>Hồng</span>
+            </ul>
+          </aside>
+        </div>
+        <div class="col-9 product-list__grid">
+          <div class="row d-flex flex-collumn justify-content-center">
+            <!-- Include your sidebar content here -->
+
+            <!-- Product Page Detail -->
+            <div class="productPage-detail">
+              <!-- Product Page Banner -->
+              <div class="productPage-banner">
+                <img
+                  src="../resources/image/bannerproductlist.png"
+                  alt="banner"
+                />
+              </div>
+              <!-- Product Page Tab -->
+              <div class="productPage-tab d-flex flex-row">
+                <!-- Include your product categories tab content here -->
+                <div class="filter-buttons">
+                    <div class="list-view-button"><i class="fa-solid fa-grip" aria-hidden="true"></i> List view</div>
+                    <div class="grid-view-button"><i class="fa-solid fa-grip-lines" aria-hidden="true"></i> Grid view</div>
+                  </div>
+                </div>
+                      <!-- Your displayProduct content goes here -->
+                      <ul class="list grid-view-filter">
+
+
+                      </ul>
+                    <!-- Repeat for other productList items -->
+                  
+              </div>
+              <!-- Pagination -->
+              <div class="pagination">
+                <!-- Include your pagination content here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="../main.js"></script>
+    <script src="../script/productCategory.js"></script>
+  </body>
 </html>
 
