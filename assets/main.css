@@ -6,7 +6,9 @@
 	position: relative;
 	width: 100%;
 	z-index: 10;
+
 	margin-bottom: 210px;
+
 }
 
 /*********************************
@@ -16,7 +18,9 @@
 .top_bar
 {
 	width: 100%;
+  third_day
 	height: 24px;
+
 	background: #161212;;
 	border-bottom: solid 1px rgba(0,0,0,0.05);
 	z-index: 2;
@@ -79,6 +83,7 @@
     color: #FFFFFF;
 
 }
+
 .user_icon a {
 	font-size: 14px;
 }
@@ -238,6 +243,7 @@
 .header__bottom{
     background: #e0dddd;
 	height: 145px;
+
 }
 .header__search__input input{
     border-radius: 15px;
@@ -264,6 +270,7 @@
 }
 .header__navigation{
     width: 100%;
+
     height: 30px;
     background-color: #3FB871;
 }
@@ -271,6 +278,11 @@ ul .nav-item:first-child{
 
 	background-color: #36A66D;
 }
+
+    height: 4 8px;
+    background-color: #3FB871;
+}
+
 .nav-item a{
     color: #f2f2f2 !important;
     padding: 5px 20px !important;
@@ -278,6 +290,7 @@ ul .nav-item:first-child{
 }
 .header__navigation__icon{
     color: #f2f2f2;
+
 }
 .body__slide {
 	 
@@ -583,3 +596,5 @@ position: relative;
 	font-weight: 300
   }
   
+}
+

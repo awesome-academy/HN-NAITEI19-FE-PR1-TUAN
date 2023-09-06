@@ -1,3 +1,4 @@
+
 // Include common header
 fetch('header.html')
   .then(response => response.text())
@@ -57,3 +58,4 @@ const productBestList = document.getElementById("product__list")
 renderData(productBestList,6)
 const productSaleList = document.getElementById("product__list--sale")
 renderData(productSaleList,9)
+
